@@ -1,5 +1,5 @@
 body {
-      z-index: 0;
+  z-index: 0;
 }
 
 /* .jumbotron {
@@ -7,15 +7,32 @@ body {
 } */
 
 .hero {
-      width: 100%;
-      height: 100vh;
-      background-image: url(img/test.png);
-      background-size: cover;
-      background-position: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url(img/test.png);
+  background-size: cover;
+  background-position: center;
 }
 
+@media screen and (max-width: 768px) {
+  .hero {
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/mobile.png);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .hero .container {
+    position: relative;
+    right: 50px;
+    bottom: 0px;
+    top: 300px;
+    /* width: 400px; */
+  }
+}
 /* #gel1 {
-      padding-top: 22rem;
+  padding-top: 22rem;
       position: absolute;
       z-index: 1;
       margin-left: auto;
@@ -23,6 +40,90 @@ body {
 } */
 
 .mt-5 {
-      margin-top: 5rem !important;
-    }
-    
+  margin-top: 5rem !important;
+}
+
+/* Reference */
+.project__img {
+  position: relative;
+  overflow: hidden;
+}
+.project__img img {
+  border-radius: 0.5rem;
+}
+.project__link {
+  position: absolute;
+  bottom: -100%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
+}
+.project__img:hover .project__link {
+  bottom: 0;
+}
+.project__link-name {
+  color: var(--dark-color);
+}
+
+/* profile */
+.profile-area {
+  padding: 80px 0;
+}
+.card {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0, 5);
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.img1 img {
+  height: 200px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  width: 100%;
+}
+.img2 img {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 7px solid #fff;
+  margin-top: -80px;
+}
+.card:hover .img2 img {
+  border-color: darkcyan;
+  transition: 0.7s;
+}
+.main-text {
+  padding: 20px 0;
+  text-align: center;
+}
+.main-text h2 {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 20px;
+  margin: 0 0 20px;
+}
+.main-text p {
+  font-size: 16px;
+  padding: 0 20px;
+}
+.socials {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.socials i {
+  font-size: 20px;
+  color: darkcyan;
+  padding: 0 10px;
+}
