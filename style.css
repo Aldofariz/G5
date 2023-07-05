@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
 body {
   z-index: 0;
 }
@@ -12,6 +14,62 @@ body {
   background-image: url(img/test.png);
   background-size: cover;
   background-position: center;
+}
+
+@media screen and (min-width: 992px) {
+  .navbar {
+    padding: 0;
+  }
+  .navbar .navbar-nav .nav-item {
+    margin: 0 1em;
+  }
+  .navbar .navbar-nav .nav-link {
+    padding: 1em 0;
+  }
+}
+
+.navbar-brand {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+
+.navbar .navbar-nav .nav-item {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+}
+/* .navbar .navbar-nav .nav-item::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  content: "";
+  background-color: #b89ef9;
+  width: 0%;
+  height: 4px;
+  transition: all 0.5s;
+}
+.navbar .navbar-nav .nav-item:hover::after {
+  width: 100%;
+} */
+
+.navbar .navbar-nav li {
+  list-style: none;
+  flex: 1;
+  font-size: 30;
+  cursor: pointer;
+}
+
+.navbar .navbar-nav li a {
+  color: #b89ef9;
+  transition: 0.5s ease;
+}
+.navbar .navbar-nav li .waduh {
+  color: #b89ef9;
+  border-bottom: 5px solid #b89ef9;
+  width: 100%;
+  border-radius: 1px;
+  transition: 0.5s ease;
 }
 
 @media screen and (max-width: 768px) {
@@ -62,7 +120,7 @@ body {
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 0.5rem;
   cursor: pointer;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
   transition: 0.3s;
 }
 .project__img:hover .project__link {

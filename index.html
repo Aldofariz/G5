@@ -16,19 +16,20 @@
     <!--CSS-->
     <link rel="stylesheet" href="style.css" />
 
+    <link rel="shortcut icon" href="img/logo.png" />
     <title>Kelompok 5</title>
   </head>
   <body style="background-color: #b89ef9">
     <nav class="navbar navbar-expand-lg navbar-light shadow-sm fixed-top" style="background-color: #0a7fc1">
       <div class="container">
-        <a class="navbar-brand" href="#">G5</a>
+        <a class="navbar-brand" href="#home">G5</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link waduh" aria-current="page" href="#home">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#about">Tips</a>
@@ -47,7 +48,7 @@
       </div>
     </nav>
     <!--Akhir navbar-->
-    <section class="hero">
+    <section id="home" class="hero">
       <div class="container position-absolute top-50 start-50 translate-middle">
         <h1 class="display-4 ps-5 fw-bold" style="color: #0a7fc1">Changing your <br />Bad habits</h1>
         <p class="lead ps-5">Always take care of your health <br />starting from the food menu that you consume everyday.</p>
@@ -63,40 +64,42 @@
 
     <!-- awal TIPS -->
     <section id="about" style="background-color: #0a7fc1">
-      <div class="container text-white">
-        <div class="row text-center">
-          <div class="col pb-4 mt-5">
-            <h2>Let's Be Healthy</h2>
+      <div class="project-tips">
+        <div class="container text-white">
+          <div class="row text-center">
+            <div class="col pb-4 mt-5">
+              <h2>Let's Be Healthy</h2>
+            </div>
           </div>
-        </div>
-        <div class="row pt-2 justify-content-center">
-          <div class="col-md-3 text-start">
-            <center>
-              <img src="img/olah.png" width="300px" />
-              <h4>Olahraga</h4>
-              <p>penting dalam menerapkan pola hidup sehat adalah berolahraga, Lakukan berjalan cepat minimal 150 menit/minggu. Atau berlari dan berdansa minimal 75 menit/minggu.</p>
-            </center>
-          </div>
-          <div class="col-md-3 text-start">
-            <center>
-              <img src="img/makann.png" width="241px" />
-              <h4>Makanan sehat</h4>
-              <p>Untuk menjaga pola makan sehat perhatikan asupan makanan, kurangi makanan tinggi lemak seperti makanan cepat saji, dan tingkatkan konsumsi sayuran serta buah.</p>
-            </center>
-          </div>
-          <div class="col-md-3 text-start">
-            <center>
-              <img src="img/cuci.png" width="246px" />
-              <h4>Hidup Bersih</h4>
-              <p>Awali kebersihan dari hal - hal kecil seperti Jaga kebersihan diri dengan mandi, mencuci tangan sebelum makan dan setelah beraktivitas, menggosok gigi rutin, serta menjaga barang-barang yang Anda kenakan tetap bersih.</p>
-            </center>
-          </div>
-          <div class="col-md-3 text-start">
-            <center>
-              <img src="img/tidur.png" width="250px" />
-              <h4>Tidur cukup</h4>
-              <p>Tidur cukup penting untuk kesehatan dan kesejahteraan kita. Ini membantu memberi energi, meningkatkan suasana hati, konsentrasi, dan kinerja. Pastikan tidur yang cukup agar bisa menikmati manfaatnya secara maksimal</p>
-            </center>
+          <div class="row pt-2 justify-content-center">
+            <div class="col-md-3 text-start">
+              <center>
+                <img src="img/olah.png" width="300px" />
+                <h4>Olahraga</h4>
+                <p>penting dalam menerapkan pola hidup sehat adalah berolahraga, Lakukan berjalan cepat minimal 150 menit/minggu. Atau berlari dan berdansa minimal 75 menit/minggu.</p>
+              </center>
+            </div>
+            <div class="col-md-3 text-start">
+              <center>
+                <img src="img/makann.png" width="241px" />
+                <h4>Makanan sehat</h4>
+                <p>Untuk menjaga pola makan sehat perhatikan asupan makanan, kurangi makanan tinggi lemak seperti makanan cepat saji, dan tingkatkan konsumsi sayuran serta buah.</p>
+              </center>
+            </div>
+            <div class="col-md-3 text-start">
+              <center>
+                <img src="img/cuci.png" width="246px" />
+                <h4>Hidup Bersih</h4>
+                <p>Awali kebersihan dari hal - hal kecil seperti Jaga kebersihan diri dengan mandi, mencuci tangan sebelum makan dan setelah beraktivitas, menggosok gigi rutin, serta menjaga barang-barang yang Anda kenakan tetap bersih.</p>
+              </center>
+            </div>
+            <div class="col-md-3 text-start">
+              <center>
+                <img src="img/tidur.png" width="250px" />
+                <h4>Tidur cukup</h4>
+                <p>Tidur cukup penting untuk kesehatan dan kesejahteraan kita. Ini membantu memberi energi, meningkatkan suasana hati, konsentrasi, dan kinerja. Pastikan tidur yang cukup agar bisa menikmati manfaatnya secara maksimal</p>
+              </center>
+            </div>
           </div>
         </div>
       </div>
@@ -111,7 +114,7 @@
     <!-- Akhir TIPS -->
 
     <!-- Awal Projects -->
-    <section id="projects" style="background-color: #0099ff">
+    <section class="projects" id="projects" style="background-color: #0099ff">
       <div class="container">
         <div class="row text-center text-white">
           <div class="col pb-4 mt-5">
@@ -184,7 +187,7 @@
     <!--akhir project-->
 
     <!--awal member-->
-    <section id="teams" style="background-color: #0a7fc1">
+    <section class="teams" id="teams" style="background-color: #0a7fc1">
       <div class="profile-area">
         <div class="container">
           <div class="col pb-4 mb-3 text-center text-light">
@@ -239,6 +242,7 @@
                   <a href="https://github.com/Mukclay"><i class="bi bi-github"></i></a>
                   <a href="https://linkedin.com/in/mukhlisaburizal"><i class="bi bi-linkedin"></i></a>
                   <a href="https://wa.me/6282120100437"><i class="bi bi-whatsapp"></i></a>
+                  <!-- <a href="https://wa.me/6282120100437"><i class="bi bi-globe2"></i></a> -->
                 </div>
               </div>
             </div>

@@ -35,3 +35,34 @@ async function handleSubmit(event) {
     });
 }
 form.addEventListener("submit", handleSubmit);
+
+// NavLink
+// var btnContainer = document.getElementById("navbarNav");
+// var btns = btnContainer.getElementsByClassName("nav-link");
+
+// for (var i = 0; i < btns.length; i++) {
+//   btns[i].addEventListener('click', function () {
+//     var current = document.getElementsByClassName("waduh");
+//     current[0].className = current[0].className.replace(" waduh");
+//     this.className += " waduh";
+//   });
+// }
+
+let sections = document.querySelectorAll("section");
+let navLinks = document.querySelectorAll("nav ul li a");
+
+window.onscroll = () => {
+  sections.forEach((sec) => {
+    let top = window.scrollY;
+    let offset = sec.offsetTop;
+    let height = sec.offsetHeight;
+    let id = sec.getAttribute("id");
+
+    if (top >= offset && top < offset + height) {
+      navLinks.forEach((links) => {
+        links.classList.remove("waduh");
+        document.querySelector("nav ul li a[href*=" + id + "]").classList.add("waduh");
+      });
+    }
+  });
+};
